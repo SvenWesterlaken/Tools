@@ -388,11 +388,21 @@ form button.searchbtn {
 }
 
 #google_drive {
+  background: #34a853;
+  border-bottom: solid 2px #1c5a2d;
+  box-shadow: 0px -2px 0px #1c5a2d inset;
+}
+
+#google_drive:active {
+  box-shadow: none;
+}
+
+#material_colors {
   background: #ea4335;
   border-bottom: solid 2px #a81d11;
   box-shadow: 0px -2px 0px #a81d11 inset;
 }
 
-#google_drive:active {
+#material_colors:active {
   box-shadow: none;
 }
