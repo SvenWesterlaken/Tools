@@ -1,18 +1,18 @@
 //Mixins
 mixin clipboardbtn(text, data)
  button.btn.copyclip(data-clipboard-text:"#{data}", id="#{text}") #{text}
- 
+
 mixin linkbtn(text, link, icon)
- a.btn(href="#{link}", id="#{text}") 
+ a.btn(href="#{link}", id="#{text}")
   i(class="fa fa-#{icon} fa-lg", aria-hidden="true")
   span #{text}
-  
+
 mixin downloadbtn(text, link)
  a.btn(href="#{link}", id="#{text}")
   i(class="fa fa-download fa-lg" aria-hidden="true")
   span #{text}
-  
-//Document  
+
+//Document
 doctype html
 html
  head
@@ -27,7 +27,7 @@ html
 			  crossorigin="anonymous")
   script(src="functions.js")
 
-  
+
  body
   section
    h1 Google Search
@@ -52,9 +52,9 @@ html
    +linkbtn("dumpert", "http://www.dumpert.nl/", "smile-o")
    +linkbtn("github", "https://github.com/", "github")
    +linkbtn("transip", "https://www.transip.nl/cp/", "server")
-   +linkbtn("travian_kingdoms", "http://ks4-nl.travian.com", "shield")
+   +linkbtn("pocket", "https://getpocket.com/a/queue/", "get-pocket")
    +linkbtn("google_drive", "https://drive.google.com/drive/u/0/my-drive", "google")
-   
+
   section
    h1 Avans
    +linkbtn("rooster", "https://rooster.avans.nl/", "calendar")
@@ -62,25 +62,19 @@ html
    +linkbtn("vervoer", "https://9292.nl/", "bus")
    +linkbtn("blackboard", "http://bb.avans.nl", "graduation-cap")
    +linkbtn("mail", "https://mail.google.com/mail/u/1/#inbox", "envelope")
-   +linkbtn("drawio", "https://www.draw.io/", "pencil")
-   +linkbtn("duolingo", "https://www.duolingo.com/", "globe")
-   +linkbtn("balsamiq", "https://avans.mybalsamiq.com/", "file-o")
-   
+
   section
    h1 Design
-   +linkbtn("shake", "https://web.shakelaw.com/folders", "book")
    +linkbtn("flatuicolors", "http://flatuicolors.com/", "map")
    +linkbtn("fontawesome", "http://fontawesome.io/icons", "fa")
    +linkbtn("the_stocks", "http://thestocks.im/", "times")
    +linkbtn("name_that_color", "http://chir.ag/projects/name-that-color/", "comment")
    +linkbtn("brandcolors", "http://brandcolors.net/", "adjust")
    +linkbtn("mediamilitia", "http://mediamilitia.com/", "archive")
-   
+   +linkbtn("coolors", "https://coolors.co/app", "paint-brush")
+   +linkbtn("freedesignresources", "http://freedesignresources.net/", "archive")
+
   section
    h1 Tools
    +linkbtn("vertalen.nu", "http://www.vertalen.nu/", "refresh")
    +linkbtn("trello", "https://trello.com/", "trello")
-   
-  
-  
-  
